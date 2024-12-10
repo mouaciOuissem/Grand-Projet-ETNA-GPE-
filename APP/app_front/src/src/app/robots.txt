@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /profile/
+Disallow: /document/
+Disallow: /processus/
+Disallow: /portainer/
+Disallow: /grafana/
+Allow: /
+
+Sitemap: https://www.snl-corp.fr/sitemap.xml

@@ -1,0 +1,93 @@
+/* src/styles/buttons.css */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Adjust the gap between buttons as needed */
+    margin-top: 2rem; /* Add some space between the title and buttons */
+}
+
+.custom-button {
+    width: 200px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+}
+
+.custom-button:hover:nth-child(1) {
+    border-color: yellow;
+}
+
+.custom-button:hover:nth-child(2) {
+    border-color: blue;
+}
+
+.custom-button:hover:nth-child(3) {
+    border-color: green;
+}
+
+.title {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: var(--primary-color); /* Adjust the color as needed */
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+    text-align: center;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.field-label {
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.field-input {
+    width: 300px; /* Adjust the width as needed */
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/* src/styles/layout/buttons.scss */
+
+/* Ensure the dropdown fits the design and text is centered */
+.p-dropdown {
+    height: 3.5rem; /* Adjust this value to match the height of your InputText fields */
+    display: flex;
+    align-items: center;
+    padding: 0; /* Remove any padding that might affect alignment */
+}
+
+.p-dropdown .p-dropdown-trigger {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; /* Adjust padding if needed */
+}
+
+.p-dropdown .p-dropdown-label {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 1.5; /* Ensure text alignment is consistent */
+}
+
+.p-dropdown-panel {
+    height: auto; /* Ensure the dropdown menu adjusts to the content height */
+}
+
+/* Optional: Adjust font size and padding for better alignment */
+.p-dropdown .p-dropdown-label,
+.p-dropdown .p-dropdown-trigger {
+    font-size: 1rem; /* Adjust font size if necessary */
+}
+

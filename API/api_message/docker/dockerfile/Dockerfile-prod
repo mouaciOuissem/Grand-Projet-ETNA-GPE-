@@ -1,0 +1,38 @@
+ARG IMAGE_VERSION=22.7.0-alpine3.20
+
+FROM node:${IMAGE_VERSION} AS build
+RUN corepack enable
+
+ENV NODE_ENV=production
+WORKDIR /usr/src/app
+
+COPY --chown=node:node ../src/package.json ../src/.yarnrc.yml ./
+
+RUN yarn install && \
+    apk add --no-cache dumb-init
+
+# Stage 2: Final Image with Alpine
+FROM node:${IMAGE_VERSION}
+
+ENV NODE_ENV=production
+
+WORKDIR /usr/src/app
+
+# Copy needed files
+COPY --chown=node:node --from=build /usr/src/app/node_modules /usr/src/app/node_modules
+COPY --chown=node:node ../src .
+COPY --chown=node:node docker/env/.env.production .env
+
+# Copy binary files
+COPY --from=build /usr/bin/dumb-init /usr/bin/dumb-init
+
+EXPOSE 3014
+
+USER node
+
+# Healthcheck
+# HEALTHCHECK --interval=30s --timeout=3s \
+#     CMD ["sh", "-c", "curl -f http://localhost:3001/api/health || exit 1"]
+
+# Start the application
+CMD ["dumb-init", "node", "index.js"]

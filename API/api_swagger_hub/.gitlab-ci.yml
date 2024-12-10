@@ -1,0 +1,3 @@
+include:
+  - project: 'snl/main_pipeline'
+    file: 'templates/main_template.yml'

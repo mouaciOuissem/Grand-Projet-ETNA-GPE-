@@ -1,0 +1,7 @@
+const path = require('path');
+
+module.exports = {
+    'config': path.resolve('Config', 'MySQL.js'),
+    'models-path': path.resolve('Models', ''),
+    'migrations-path': path.resolve('Migrations', '')
+}

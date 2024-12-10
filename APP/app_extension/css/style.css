@@ -1,0 +1,89 @@
+/* css/style-login.css */
+
+/* Reset */
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url('/images/wal.jpg');
+  background-size: cover; 
+  background-position: center 40px;
+  background-repeat: no-repeat; 
+  min-width: 285px;
+  max-width: 400px;
+  height: auto;
+}
+
+.login-container {
+  width: 320px;
+  height: 400px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  
+  text-align: center;
+  color: #fff;
+  position: relative; 
+  background-color: #000000;
+}
+
+h1 {
+  padding-bottom: 13px;
+  padding-top: 25px;
+}
+
+h1 img {
+  width: 50px;
+  height: 50px;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 20px 15px 50px;
+  background-color: #1d131d;
+  border: none;
+  border-radius: 0px;
+  color: #ffffff;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+
+button {
+  padding: 12px 10px; 
+  border: solid 3px #ba29c7;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  width: 45%; 
+  margin-top: 15px;
+  background-color: #1d131d;
+}
+
+button:hover {
+  background-color: #ba29c79c;
+  border: solid 3px #fffeff;
+}
+
+.icon img {
+  width: 15px;  
+  height: 15px; 
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,26 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --legacy-watch --polling-interval 5000 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prosy",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.637.0",
+    "@aws-sdk/s3-request-presigner": "^3.637.0",
+    "aws-sdk": "^2.1687.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "minio": "^8.0.1"
+  },
+  "packageManager": "yarn@4.5.0",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

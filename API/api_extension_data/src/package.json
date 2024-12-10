@@ -1,0 +1,31 @@
+{
+  "name": "service_extension_data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --legacy-watch --polling-interval 5000 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Prosy",
+  "dependencies": {
+    "axios": "^1.7.6",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.11.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "nodemon": "^3.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./src/node_modules/cz-conventional-changelog"
+    }
+  }
+}

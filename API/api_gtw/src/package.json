@@ -1,0 +1,37 @@
+{
+  "name": "service_gtw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --legacy-watch --polling-interval 5000 index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Prosy",
+  "dependencies": {
+    "axios": "^1.7.6",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "supertest": "^7.0.0",
+    "jest": "^29.7.0",
+    "jest-mock-axios": "^4.8.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "nodemon": "^3.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./src/node_modules/cz-conventional-changelog"
+    }
+  }
+}

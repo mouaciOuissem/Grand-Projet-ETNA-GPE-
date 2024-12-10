@@ -1,0 +1,60 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4200",
+    "build": "next build",
+    "start": "next start -p 4200",
+    "format": "prettier --write \"{app,demo,layout,types}/**/*.{js,ts,tsx,d.ts}\"",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Prosy",
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
+    "@mui/lab": "6.0.0-beta.9",
+    "@mui/material": "^6.1.0",
+    "@types/node": "22.5.1",
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "axios": "^1.7.6",
+    "chart.js": "^4.4.4",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.7",
+    "express": "^4.19.2",
+    "front": "file:",
+    "next": "^14.2.13",
+    "primeflex": "^3.3.1",
+    "primeicons": "^7.0.0",
+    "primereact": "10.8.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "^7.53.0",
+    "react-router": "^6.26.1",
+    "react-router-dom": "^6.26.1",
+    "react-transition-group": "^4.4.5",
+    "typescript": "5.5.4"
+  },
+  "devDependencies": {
+    "@types/react-modal": "^3",
+    "@types/react-transition-group": "^4",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-conventional-emoji": "^1.0.2",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8"
+  },
+  "packageManager": "yarn@4.5.0",
+  "config": {
+    "commitizen": {
+      "path": "./src/node_modules/cz-conventional-emoji"
+    }
+  }
+}

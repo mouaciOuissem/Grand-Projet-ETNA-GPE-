@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Prosy Extension",
+    "version": "1.0",
+    "description": "Avec Prosy fini les démarches longues et ennuyantes ! Place au gain de temps et à la facilité !",
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "action": {
+        "default_popup": "pages/index.html"
+    },
+    "icons": {
+        "16": "images/logo16.png",
+        "48": "images/logo48.png",
+        "128": "images/logo128.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*/"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/content.js"] 
+        }
+    ]
+}

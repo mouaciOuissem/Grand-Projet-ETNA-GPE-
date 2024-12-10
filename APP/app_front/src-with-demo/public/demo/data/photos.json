@@ -1,0 +1,40 @@
+{
+    "data":[
+        {
+            "itemImageSrc": "demo/images/documents/img1.jpg",
+            "thumbnailImageSrc": "demo/images/documents/img1.jpg",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "demo/images/documents/img2.png",
+            "thumbnailImageSrc": "demo/images/documents/img2.png",
+            "alt": "Description for Image 2",
+            "title": "Title 2"
+        },
+        {
+            "itemImageSrc": "demo/images/documents/img3.png",
+            "thumbnailImageSrc": "demo/images/documents/img3.png",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "demo/images/documents/img4.png",
+            "thumbnailImageSrc": "demo/images/documents/img4.png",
+            "alt": "Description for Image 4",
+            "title": "Title 4"
+        },
+        {
+            "itemImageSrc": "demo/images/documents/img5.jpg",
+            "thumbnailImageSrc": "demo/images/documents/img5.jpg",
+            "alt": "Description for Image 5",
+            "title": "Title 5"
+        },
+        {
+            "itemImageSrc": "demo/images/documents/img6.jpg",
+            "thumbnailImageSrc": "demo/images/documents/img6.jpg",
+            "alt": "Description for Image 6",
+            "title": "Title 6"
+        }
+    ]
+}

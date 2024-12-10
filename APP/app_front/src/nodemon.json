@@ -1,0 +1,7 @@
+{
+    "watch": ["/usr/src/app/"],
+    "ext": "js,json,jsx,ts,tsx",
+    "ignore": ["node_modules/"],
+    "exec": "node index.js"
+  }
+  
